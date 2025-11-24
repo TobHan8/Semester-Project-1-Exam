@@ -1,0 +1,40 @@
+
+/* --- FLEXBOX LAYOUT FOR RESPONSIVENESS --- */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* --- MAKES SURE THAT ELEMENTS INSIDE TAKE UP AT LEAST WHOLE SCREEN --- */
+}
+
+/* ### HERO BACKGROUND IMAGE ### */
+.hero-image {
+    background-image: url(/assets/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-primary);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 1; /* --- FILLS OUT SPACE SO THAT HEADER AND FOOTER GETS PUSHED CORRECTLY --- */
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-primary);
+    padding: 1.5rem 2rem;
+}

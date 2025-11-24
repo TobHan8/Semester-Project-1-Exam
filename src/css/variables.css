@@ -1,0 +1,10 @@
+:root {
+
+    /* --- COLORS --- */
+    --color-primary: #4A006C;
+    --color-secondary: #3FA752;
+    --color-black: #000000;
+
+    /* --- FONTS --- */
+    --font-main: sans-serif;
+}

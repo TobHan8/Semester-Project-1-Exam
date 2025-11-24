@@ -1,0 +1,91 @@
+/*.hamburger-menu {
+    z-index: 2;
+    left: 1rem;
+    font-size: 5rem;
+    color: var(--color-secondary);
+    stroke: var(--color-black);
+    text-shadow: /* --- FROM CLAUDE AI: MIMICS THE STROKE EFFECT FROM FIGMA DESIGN ---
+        -3px -3px 0 #000,
+     0   -3px 0 #000,
+     3px -3px 0 #000,
+     3px  0   0 #000,
+     3px  3px 0 #000,
+     0    3px 0 #000,
+    -3px  3px 0 #000,
+    -3px  0   0 #000;
+    cursor: pointer;
+} */
+
+/* ### HAMBURGER DROPDOWN MENU ### */
+.hamburger-menu {
+    position: absolute;
+    left: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.hamburger-menu:hover {
+    opacity: 0.75;
+}
+
+/* --- HAMBURGER BARS --- */
+.hamburger-menu > span {
+    width: 85px;
+    height: 14px;
+    background-color: var(--color-secondary);
+    border: 2.5px solid var(--color-black);
+    border-radius: 25px;
+}
+
+/* --- HAMBURGER TEXT --- */
+.hamburger-text {
+    font-size: 25px;
+    font-weight:1000;
+    font-family: var(--font-main);
+    color: var(--color-secondary);
+    -webkit-text-stroke: 1.8px var(--color-black);
+    margin-top: -8px;
+}
+
+.header-logo {
+    max-height: 150px;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
+}
+ 
+/* --- HOVER ANIMATION --- */
+.header-logo:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.header-buttons {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    gap: 3rem;
+    transition: opacity 0.3s ease
+}
+.header-buttons button {
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-radius: 35px;
+    border: solid var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 30px;
+    font-weight: bolder;
+    transition: opacity 0.3s ease
+}
+
+.header-buttons button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
