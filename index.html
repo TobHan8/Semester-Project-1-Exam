@@ -9,7 +9,7 @@
     <meta property="og:image" content="https://www.this-is-an-exaple.com/assets/images/og-logo.jpg">
     <meta property="og:description" content="Science made fun!">
     <title>The Community Science Museum</title>
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <script src="https://kit.fontawesome.com/71249f71bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,30 +17,113 @@
     <div class="hero-image"></div>
 
     <header aria-label="Website header">
+        
+        <nav class="header-nav">
 
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="hamburger-text">
-                <span>MENU</span>
+            <div class="hamburger-container">
+                <input type="checkbox" id="hamburger-toggle">
+                <label for="hamburger-toggle">
+                    <div class="hamburger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="hamburger-text">
+                            <span>MENU</span>
+                        </div>
+                    </div>
+                </label>
+                <nav class="hamburger-menu">
+                    <div class="hamburger-menu-links">
+                        <a href="pages/visit.html">VISIT US</a>
+                        <a href="pages/explore.html">EXPLORE</a>
+                        <a href="pages/about.html">ABOUT US</a>
+                        <a href="pages/donate.html">DONATE</a>
+                    </div>
+                </nav>
             </div>
-        </div>
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Website logo: Keyhole with electrons circling around">
+                </a>
+            </div>
 
-        <img class="header-logo" src="/assets/images/logo.png" alt="Website logo: Keyhole with electrons circling around">
+            <div class="header-buttons">
+                <a href="pages/visit.html"><button>VISIT US</button></a>
+                <a href="pages/donate.html"><button>DONATE</button></a>
+            </div>
 
-        <div class="header-buttons">
-            <a href="/pages/visit.html"><button>VISIT US</button></a>
-            <a href="/pages/donate.html"><button>DONATE</button></a>
-        </div>
+        </nav>
+
     </header>
 
     <main>
+        <nav class="main-content-grid" aria-label="Main page navigation">
+            <div class="main-content-links-container">
+                <a href="pages/construction.html">
+                    <span>SPECIAL EVENTS</span>
+                    <img src="assets/images/special.jpg" alt="Special events">
+                </a>
+            </div>
+            <div class="main-links-visit">
+                <a href="pages/visit.html">
+                    <span>VISIT US</span>
+                </a>
+            </div>
+            <div class="main-content-links-container">
+                <a href="pages/explore.html">
+                    <span>EXPLORE</span>
+                    <img src="assets/images/explore.jpg" alt="Explore">
+                </a>
+            </div>
+            <div class="main-content-links-container">
+                <a href="pages/donate.html">
+                    <span>DONATE</span>
+                    <img src="assets/images/donate.jpg" alt="Donate">
+                </a>
+            </div>
+            <div class="main-content-links-container">
+                <a href="pages/about.html">
+                    <span>ABOUT US</span>
+                    <img src="assets/images/museum.jpg" alt="About us">
+                </a>
+            </div>
+            <div class="main-content-links-container">
+                <a href="pages/involved.html">
+                    <span>GET INVOLVED</span>
+                    <img src="assets/images/involved.jpg" alt="Get involved">
+                </a>
+            </div>
+        </nav>
+        </div>
 
     </main>
 
     <footer aria-label="Website footer">
-        <img class="header-logo" src="/assets/images/logo.png" alt="Website logo: Keyhole with electrons circling around">
+        <div class="footer-container">
+            <div class="footer-left-container">
+                <a href="index.html">
+                    <img class="footer-logo" src="assets/images/logo.png" alt="Website logo: Keyhole with electrons circling around">
+                </a>
+                <div class="footer-text">
+                    <span>THE COMMUNITY SCIENCE MUSEM</span>
+                    <span>2025 ALL RIGHTS RESERVED &copy;</span>
+                </div>
+            </div>   
+            <div class="footer-socials">
+                <a href="https://wwww.facebook.com">
+                    <i class="fa-brands fa-square-facebook" aria-label="Facebook button"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram" aria-label="Instagram button"></i>
+                </a>
+                <a href="https://www.twitter.com">
+                    <i class="fa-brands fa-x-twitter" aria-label="Twitter/X button"></i>
+                </a>
+                <a href="https://www.youtube.com">
+                    <i class="fa-brands fa-youtube" aria-label="YouTube button"></i>
+                </a>
+            </div>    
+        </div>
 
     </footer>
     

@@ -1,25 +1,12 @@
-/*.hamburger-menu {
-    z-index: 2;
-    left: 1rem;
-    font-size: 5rem;
-    color: var(--color-secondary);
-    stroke: var(--color-black);
-    text-shadow: /* --- FROM CLAUDE AI: MIMICS THE STROKE EFFECT FROM FIGMA DESIGN ---
-        -3px -3px 0 #000,
-     0   -3px 0 #000,
-     3px -3px 0 #000,
-     3px  0   0 #000,
-     3px  3px 0 #000,
-     0    3px 0 #000,
-    -3px  3px 0 #000,
-    -3px  0   0 #000;
-    cursor: pointer;
-} */
 
 /* ### HAMBURGER DROPDOWN MENU ### */
-.hamburger-menu {
-    position: absolute;
-    left: 2rem;
+.hamburger-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.hamburger-button {
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -30,12 +17,12 @@
 }
 
 /* --- HOVER ANIMATION --- */
-.hamburger-menu:hover {
+.hamburger-button:hover {
     opacity: 0.75;
 }
 
 /* --- HAMBURGER BARS --- */
-.hamburger-menu > span {
+.hamburger-button > span {
     width: 85px;
     height: 14px;
     background-color: var(--color-secondary);
@@ -45,16 +32,69 @@
 
 /* --- HAMBURGER TEXT --- */
 .hamburger-text {
-    font-size: 25px;
+    font-size: 27px;
     font-weight:1000;
     font-family: var(--font-main);
     color: var(--color-secondary);
     -webkit-text-stroke: 1.8px var(--color-black);
     margin-top: -8px;
+    width: 85px;
+    text-align: center;
 }
 
-.header-logo {
-    max-height: 150px;
+/* --- HIDES CHECKBOX FOR HAMBURGER --- */
+#hamburger-toggle { 
+    display: none;
+}
+
+.hamburger-menu {
+    z-index: 4;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: 0; /* --- HIDES MENU INSTEAD OF display:none --- */
+    overflow: hidden; /* ^^^^^^^^^^^^ */
+    max-width: fit-content;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: max-height 0.3s ease; /* --- DROPDOWN ANIMATION --- */
+    
+}
+
+/* --- HOVER ANIMATION --- */
+.hamburger-menu-links a {
+    transition: opacity 0.3s ease;
+}
+
+/* --- HOVER ANIMATION --- */
+.hamburger-menu-links a:hover {
+    opacity: 0.75;
+}
+
+.hamburger-menu a {
+    display: block;
+    overflow: auto;
+    margin: 4rem;
+    margin-right: 8rem;
+    margin-left: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-secondary);
+    border-radius: 35px;
+    border: solid 2px;
+    
+}
+
+#hamburger-toggle:checked ~ .hamburger-menu {
+    display: block;
+    max-height: 600px; /* --- OVERLY LARGE VALUE FOR ANIMATION TO WORK --- */
+}
+
+/* ### CLICKABLE HEADER LOGO ### */
+.header-logo img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-height: 125px;
     margin-top: -2rem;
     margin-bottom: -2rem;
     transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
@@ -66,26 +106,142 @@
     opacity: 0.75;
 }
 
+/* ### HEADER VISIT AND DONATE BUTTONS ### */
 .header-buttons {
-    position: absolute;
-    right: 2rem;
+    position: relative;
     display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    flex-shrink: 0; /* --- PREVENTS BUTTON FROM CHANGING SHAPE --- */
+    white-space: nowrap; /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ --- */
+    right: 2rem;
     gap: 3rem;
     transition: opacity 0.3s ease
 }
-.header-buttons button {
+
+.header-buttons button { /* CHANGE FROM BUTTON TO LINK/NAV ELEMENT A */
     background: var(--color-secondary);
     color: var(--color-black);
-    border-radius: 35px;
-    border: solid var(--color-black);
+    border-radius: 2rem;
+    border: solid 2px var(--color-black);
     padding: 1rem 2rem;
     font-family: var(--font-main);
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: bolder;
-    transition: opacity 0.3s ease
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
 }
 
+/* --- HOVER ANIMATION --- */
 .header-buttons button:hover {
     cursor: pointer;
+    opacity: 0.75;
+}
+
+/* ### MAIN CONTENT LINKS GRID MENU ### */
+.main-content-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    border-radius: 35px;
+    background-color: var(--color-primary);
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.main-content-links-container:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.main-content-links-container a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem 3rem;
+    margin-bottom: 0.75em;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.main-content-grid img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    border: solid var(--color-secondary);
+    margin-top: 0.25em;
+}
+
+/* ### MAIN CONTENT LINK VISIT BUTTON ### */
+.main-links-visit {
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.main-links-visit:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.main-links-visit a {
+    justify-self: center center;
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-radius: 4rem;
+    border: 3px solid var(--color-black);
+    padding: 2rem 3rem;
+    font-family: var(--font-main);
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* ### FOOTER LOGO ### */
+.footer-logo {
+    position: relative;
+    left: 2rem;
+    max-height: 100px;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
+}
+ 
+/* --- HOVER ANIMATION --- */
+.footer-logo:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.footer-socials {
+    display: flex;  
+    position: relative;
+    right: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-socials a,
+.footer-socials i {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    -webkit-text-stroke: 0.03em var(--color-black);
+    transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.footer-socials a:hover,
+.footer-socials i:hover {
     opacity: 0.75;
 }
