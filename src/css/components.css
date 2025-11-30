@@ -71,12 +71,13 @@
     opacity: 0.75;
 }
 
+/* --- DROPDOWN MENU BUTTONS --- */
 .hamburger-menu a {
     display: block;
     overflow: auto;
     margin: 4rem;
     margin-top: 2.5rem;
-    margin-right: 8rem;
+    margin-right: 4rem;
     margin-left: 1.5rem;
     padding: 1rem 2rem;
     background-color: var(--color-secondary);
@@ -139,7 +140,7 @@
     opacity: 0.75;
 }
 
-/* ### MAIN CONTENT LINKS GRID MENU ### */
+/* ### MAIN PAGE CONTENT LINKS GRID MENU ### */
 .main-content-links-container {
     display: flex;
     justify-content: center;
@@ -166,7 +167,7 @@
     width: 100%;
     height: 100%;
     padding: 1rem 2rem 3rem;
-    margin-bottom: 0.75em;
+    margin-bottom: 1.5rem;
     font-family: var(--font-main);
     font-size: 1.5em;
     font-weight: bolder;
@@ -184,7 +185,20 @@
     margin-top: 0.25em;
 }
 
-/* ### MAIN CONTENT LINK VISIT BUTTON ### */
+/* ### MAIN PAGE CONTENT LINK VISIT BUTTON ### */
+.main-links-visit a {
+    justify-self: center;
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-radius: 4rem;
+    border: 3px solid var(--color-black);
+    padding: 1.5rem 2.5rem;
+    font-family: var(--font-main);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
 .main-links-visit {
     transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
 }
@@ -195,17 +209,69 @@
     opacity: 0.75;
 }
 
-.main-links-visit a {
-    justify-self: center center;
+/* #### BACK BUTTON #### */
+.back-button a {
     background: var(--color-secondary);
     color: var(--color-black);
-    border-radius: 4rem;
-    border: 3px solid var(--color-black);
-    padding: 1.5rem 2.5rem;
+    border-radius: 2rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
     font-family: var(--font-main);
-    font-size: 2rem;
+    font-size: 1.5em;
     font-weight: bolder;
     text-decoration: none;
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.back-button a:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* ### EXPLORE PAGE CONTENT LINKS MENU ### */
+.explore-content-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 300px;
+    height: 210px;
+    border-radius: 35px;
+    background-color: var(--color-primary);
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.explore-content-links-container:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.explore-content-links-container a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.5rem 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-main);
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.explore-content-container img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    border: solid 8px var(--color-secondary);
+    margin-top: 0.25em;
 }
 
 /* ### FOOTER LOGO ### */
