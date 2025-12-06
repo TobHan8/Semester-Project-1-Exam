@@ -77,7 +77,6 @@
     overflow: auto;
     margin: 4rem;
     margin-top: 2.5rem;
-    margin-right: 4rem;
     margin-left: 1.5rem;
     padding: 1rem 2rem;
     background-color: var(--color-secondary);
@@ -274,6 +273,27 @@
     margin-top: 0.25em;
 }
 
+/* ### GPS MAP BUTTON ### */
+.gps-button {
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-radius: 2rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.gps-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+
 /* ### FOOTER LOGO ### */
 .footer-logo {
     position: relative;
@@ -297,12 +317,12 @@
     right: 2rem;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .footer-socials a,
 .footer-socials i {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--color-secondary);
     -webkit-text-stroke: 0.03em var(--color-black);
     transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
