@@ -19,7 +19,7 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.001em;
-    word-spacing: 1rem;
+    word-spacing: 0.5rem;
     line-height: 1em;
 }
 
@@ -27,10 +27,11 @@ h1 span {
     display: block;
 }
 
-.page-top-container-construction h1 {
+/* ### UNDER CONSTRUCTION PAGE ### */
+.construction-content-container span {
     font-family: var(--font-main);
     color: var(--color-white);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.001em;
     word-spacing: -0.01rem;
@@ -43,38 +44,43 @@ h1 span {
     border: solid 8px var(--color-secondary);
     border-radius: 25px;
     text-align: center;
-    font-family: var(--font-main);
-    color: var(--color-secondary);
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 0.001em;
-    word-spacing: -0.01rem;
-    line-height: 2.5rem;
     padding: 1rem;
     width: 300px;
     height: auto;
     justify-self: center;
+    font-family: var(--font-main);
+    color: var(--color-secondary);
+}
+
+.visit-infobox-location h2,
+.visit-infobox-price h3{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    line-height: 2.5rem;
 }
 
 /* --- LOCATION ICON --- */
 .visit-infobox-location i {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    -webkit-text-stroke: 1.8px var(--color-black);
 }
 
 /* --- DOLLAR ICON --- */
 .visit-infobox-price i {
     font-size: 3rem;
-    font-weight: 700;
-    -webkit-text-stroke: 1.8px var(--color-black);
+    font-weight: 1000;
 }
 
+
+
+/* --- TEXT INSIDE INFOBOXES -- */
 .visit-infotext-location,
 .visit-infotext-price {
     color: var(--color-white);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 550;
     line-height: 1.5rem;
     margin-top: 1rem;
 }
@@ -107,6 +113,26 @@ h1 span {
     letter-spacing: 0.001em;
     word-spacing: -0.01rem;
     line-height: 2em;
+}
+
+/* ### ABOUT US PAGE TEXT 1 ### */
+.about-text-container-1 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+
+/* ### ABOUT US PAGE TEXT 2 ### */
+.about-text-container-2 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
 }
 
 .footer-text {

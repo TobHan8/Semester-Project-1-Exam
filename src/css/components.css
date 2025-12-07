@@ -186,7 +186,6 @@
 
 /* ### MAIN PAGE CONTENT LINK VISIT BUTTON ### */
 .main-links-visit a {
-    justify-self: center;
     background: var(--color-secondary);
     color: var(--color-black);
     border-radius: 4rem;
@@ -198,8 +197,9 @@
     text-decoration: none;
 }
 
+/* --- HOVER ANIMATION --- */
 .main-links-visit {
-    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+    transition: opacity 0.3s ease
 }
 
 /* --- HOVER ANIMATION --- */
@@ -322,7 +322,7 @@
 
 .footer-socials a,
 .footer-socials i {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--color-secondary);
     -webkit-text-stroke: 0.03em var(--color-black);
     transition: opacity 0.3s ease; /* --- HOVER ANIMATION --- */
