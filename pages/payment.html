@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Community Science Museum">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wwww.this-is-an-example.com">
+    <meta property="og:image" content="https://www.this-is-an-exaple.com/assets/images/og-logo.jpg">
+    <meta property="og:description" content="Science made fun!">
+    <title>Payment | The Community Science Museum</title>
+    <link rel="icon" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script src="https://kit.fontawesome.com/71249f71bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="hero-image"></div>
+
+    <header aria-label="Website header">
+        
+        <nav class="header-nav">
+
+            <div class="hamburger-container">
+                <input type="checkbox" id="hamburger-toggle">
+                <label for="hamburger-toggle">
+                    <div class="hamburger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="hamburger-text">
+                            <span>MENU</span>
+                        </div>
+                    </div>
+                </label>
+                <nav class="hamburger-menu">
+                    <div class="hamburger-menu-links">
+                        <a href="../pages/visit.html">VISIT US</a>
+                        <a href="../pages/explore.html">EXPLORE</a>
+                        <a href="../pages/construction.html">GET INVOLVED</a>
+                        <a href="../pages/about.html">ABOUT US</a>
+                        <a href="../pages/donate.html">DONATE</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Website logo consisting of a keyhole with electrons circling around">
+                </a>
+            </div>
+
+            <nav class="header-buttons">
+                <a href="../pages/visit.html">VISIT US</a>
+                <a href="../pages/donate.html">DONATE</a>
+            </nav>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="page-top-container">
+            <div class="back-button" aria-label="Back to home page">
+                <a href="../pages/donate.html">BACK</a>
+            </div>
+            <h1>Fill out payment form</h1>
+        </div>
+
+        <div class="payment-content-container">
+            
+            <div class="payment-form-container">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-column">
+                            <h2 class="form-title">Contact Information</h2>
+                            <div class="form-input-box">
+                                <label for="email">E-mail:</label>
+                                <input type="text" id="email"
+                                placeholder="example@example.com">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="phone-number">Phone number:</label>
+                                <input type="text" id="phone-number"
+                                placeholder="+00 00 00 00 00">
+                            </div>
+                            <h2 class="form-title">Billing Address</h2>
+                            <div class="form-input-box">
+                                <label for="first-name">First name:</label>
+                                <input type="text" id="first-name"
+                                placeholder="Ola">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="last-name">Last name:</label>
+                                <input type="text" id="last-name"
+                                placeholder="Normann">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="street-address">Street address:</label>
+                                <input type="text" id="street-address"
+                                placeholder="Bergensgaten 1">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="city">City:</label>
+                                <input type="text" id="city"
+                                placeholder="BERGEN">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="state">State:</label>
+                                <input type="text" id="state"
+                                placeholder="Vestland">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="zip-code">ZIP code:</label>
+                                <input type="text" id="zip-code"
+                                placeholder="5009">
+                            </div>
+                            <div class="form-input-box">
+                                <label for="country">Country:</label>
+                                <input type="text" id="country"
+                                placeholder="Norway">
+                            </div>
+                        </div>
+
+                        <div class="form-column">
+                            <h2 class="form-title">Accepted payment methods</h2>
+                            <img src="../assets/images/payment-cards.png" alt="Images of accepted payment cards">
+
+                            <div class="card-details">
+                                <h2 class="form-title">Card information</h2>
+                                <div class="form-input-box">
+                                    <label for="card-number">Card number:</label>
+                                    <input type="text" id="card-number"
+                                    placeholder="1111 2222 3333 4444">
+                                </div>
+                                <div class="form-input-box">
+                                    <label for="exp-date">Expiration date:</label>
+                                    <input type="text" id="exp-date"
+                                    placeholder="MM/YY">
+                                </div>
+                                <div class="form-input-box">
+                                    <label for="cvv">Security code / CVV:</label>
+                                    <input type="text" id="cvv"
+                                    placeholder="123">
+                                </div>
+
+                                <div class="form-input-box">
+                                    <label for="card-owner">Full name of card owner:</label>
+                                    <input type="text" id="card-owner"
+                                    placeholder="Ola Normann">
+                                </div>
+                            </div>
+                            <div class="form-end-container">
+                                    <h2 class="donator-name-title">Name of donator</h2>
+                                    <div class="form-input-box">
+                                        <label for="donator-name">This goes in the Hall of Fame:</label>
+                                        <input type="text" id="donator-name"
+                                        placeholder="Donator name">
+                                    </div>
+                                    <div class="checkbox-container">
+                                        <label for="anonymous" class="anonymous-text">I wish to be anonymous</label>
+                                        <input type="checkbox" id="anonymous">
+                                    </div>
+                    
+                                    <div class="confirm-pay-container">
+                                        <div class="checkbox-container">
+                                            <label for="terms-conditions">I have read and agree to the terms and conditions</label>
+                                            <input type="checkbox" id="terms-conditions">
+                                        </div>
+                                        <div class="payment-page-button">
+                                            <a href="../pages/construction.html">PAY</a>
+                                        </div>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+    
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer aria-label="Website footer">
+        <div class="footer-container">
+            <div class="footer-left-container">
+                <a href="../index.html">
+                    <img class="footer-logo" src="../assets/images/logo.png" alt="Website logo consisting of a keyhole with electrons circling around">
+                </a>
+                <div class="footer-text">
+                    <span>THE COMMUNITY SCIENCE MUSEUM</span>
+                    <span>2025 ALL RIGHTS RESERVED &copy;</span>
+                </div>
+            </div>   
+            <div class="footer-socials">
+                <a href="https://www.facebook.com">
+                    <i class="fa-brands fa-square-facebook" aria-label="Visit us on Facebook"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-instagram" aria-label="Visit us on Instagram"></i>
+                </a>
+                <a href="https://www.twitter.com">
+                    <i class="fa-brands fa-x-twitter" aria-label="Visit us on Twitter/X"></i>
+                </a>
+                <a href="https://www.youtube.com">
+                    <i class="fa-brands fa-youtube" aria-label="Visit us on YouTube"></i>
+                </a>
+            </div>    
+        </div>
+
+    </footer>
+    
+
+    
+</body>
+</html>

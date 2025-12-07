@@ -7,6 +7,7 @@
     text-align: center;
 }
 
+/* ### h1 HEADLINE FOR INDEX AND PAGE TOP CONTAINER ### */
 h1 {
     display: flex;
     flex-direction: column;
@@ -23,6 +24,7 @@ h1 {
     line-height: 1em;
 }
 
+/* ### h1 WITH span FOR INDEX PAGE ONLY ### --- MIGHT CHANGE THIS TO A MORE DECORATIVE TEXT-IMAGE ---*/ 
 h1 span {
     display: block;
 }
@@ -52,15 +54,6 @@ h1 span {
     color: var(--color-secondary);
 }
 
-.visit-infobox-location h2,
-.visit-infobox-price h3{
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.001em;
-    word-spacing: -0.01rem;
-    line-height: 2.5rem;
-}
-
 /* --- LOCATION ICON --- */
 .visit-infobox-location i {
     font-size: 3rem;
@@ -73,9 +66,17 @@ h1 span {
     font-weight: 1000;
 }
 
+/* --- INFOBOX HEADLINES --- */
+.visit-infobox-location h2,
+.visit-infobox-price h3{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    line-height: 2.5rem;
+}
 
-
-/* --- TEXT INSIDE INFOBOXES -- */
+/* --- SUB-TEXT INSIDE INFOBOXES -- */
 .visit-infotext-location,
 .visit-infotext-price {
     color: var(--color-white);
@@ -85,16 +86,16 @@ h1 span {
     margin-top: 1rem;
 }
 
-.visit-infotext-hours {
-    font-family: var(--font-main);
-    color: var(--color-white);
-    font-size: 3rem;
+/* --- HEADLINE FOR OPENING HOURS --- */
+.visit-infotext-hours h4 {
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.001em;
     word-spacing: -0.01rem;
-    line-height: 1em;
+    line-height: 2em;
 }
 
+/* --- OPENING HOURS TEXT --- */
 .visit-infotext-hours {
     text-align: center;
     font-family: var(--font-main);
@@ -105,14 +106,6 @@ h1 span {
     word-spacing: -0.01rem;
     line-height: 1.5em;
     margin-top: -8.5rem;
-}
-
-.visit-infotext-hours h4 {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 0.001em;
-    word-spacing: -0.01rem;
-    line-height: 2em;
 }
 
 /* ### ABOUT US PAGE TEXT 1 ### */
@@ -133,6 +126,50 @@ h1 span {
     font-weight: 550;
     letter-spacing: 0.001em;
     word-spacing: -0.01rem;
+}
+
+/* ### DONATE PAGE TEXT ### */
+.donate-text-container span {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    text-align: start;
+}
+
+/* ### PAYMENT PAGE TEXT ### */
+.form-input-box label {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    text-align: start;
+}
+
+.payment-content-container h2 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+
+.payment-content-container label {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+
+label.anonymous-text {
+    font-size: 2rem;
 }
 
 .footer-text {

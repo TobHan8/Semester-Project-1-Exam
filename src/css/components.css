@@ -293,6 +293,60 @@
     opacity: 0.75;
 }
 
+/* ### DONATE BUTTON ON DONATE PAGE ### */
+.donate-page-button {
+    margin: 1.5rem;
+}
+
+.donate-page-button a {
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-radius: 3rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.donate-page-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* ### PAYMENT PAGE CHECKBOXES ### */
+.checkbox-container input[type="checkbox"] {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    accent-color: var(--color-secondary);
+    flex-shrink: 0;
+}
+
+/* ### PAYMENT PAGE PAY BUTTON ### */
+.payment-page-button a {
+    color: var(--color-black);
+    background: var(--color-secondary);
+    border-radius: 3rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.payment-page-button a:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
 
 /* ### FOOTER LOGO ### */
 .footer-logo {
