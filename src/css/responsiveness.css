@@ -1,0 +1,334 @@
+
+.main-content-grid,
+.explore-content-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* --- SETS PIXEL VALUE FOR CARDS AND EQUAL SIZE IN REMAINING SPACE --- */
+    gap: 4rem;
+    place-items: center; /* --- CENTERING BOTH DIRECTIONS (was off center on mobile view) --- */
+}
+
+.payment-form-container {
+    flex-direction: column; 
+}
+
+.payment-form-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* ORDER OF RULES (SELF NOTE TO KEEP TRACK)
+###########################
+MAX-WIDTH = TOP --> BOTTOM
+--------------------------
+MIN-WIDTH = BOTTOM --> TOP
+########################## */
+
+/* ### MOBILE VIEW 1080px AND BELOW ### */
+@media (max-width: 1080px) {
+    .donate-button-mobile {
+    display: flex;
+    }
+    .header-buttons {
+        display: none; /* --- HIDE DISPLAY AFTER @media breakpoint at 1060px --- */
+    }
+}
+
+@media (max-width: 880px) {
+    .footer-socials {
+        right: 0;
+        gap: 2rem;
+    }
+    .footer-socials a,
+    .footer-socials i {
+        font-size: 3rem;
+    }
+
+}
+
+/* ### MOBILE VIEW 760px AND BELOW ### */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* --- REDUCES SIZE OF HEADLINE --- */
+    }
+    .main-content-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+    .main-links-visit {
+        order: -1; /* --- PUTS VISIT BUTTON AT START --- */
+    }
+    .main-content-links-container {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    }
+    .main-content-links-container a {
+        font-size: 1.8em;
+        padding: 1.5rem 1.8rem 3.5rem;
+    }
+    .main-content-grid img {
+    border-radius: 35px;
+    border: solid 7px var(--color-secondary);
+    }
+    .main-links-visit a {
+        padding: 1.5rem 2rem;
+        font-size: 2rem;
+        border: 2px solid var(--color-black);
+    }
+    .footer-left-container {
+        display: none;
+        margin-left: 0;
+    }
+    .footer-container {
+        justify-content: center;
+        margin: auto;
+    }
+    .footer-socials {
+        right: 0;
+        gap: 5rem;
+    }
+    .footer-socials a,
+    .footer-container i {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .donate-button-mobile a {
+        border-radius: 2rem;
+        border: solid 2px var(--color-black);
+        padding: 0.75rem 1.25rem;
+        font-size: 1em;
+        margin-right: 1rem;
+    }
+    .hamburger-button {
+    gap: 6px;
+    }
+
+/* --- HAMBURGER BARS --- */
+.hamburger-button > span {
+    width: 63.75px;
+    height: 10.5px;
+    border-radius: 18px;
+    }
+
+/* --- HAMBURGER TEXT --- */
+.hamburger-text {
+    font-size: 20.25px;
+    font-weight:1000;
+    -webkit-text-stroke: 1.35px var(--color-black);
+    margin-top: -6px;
+    width: 63.75px;
+    }
+    /* ### CLICKABLE HEADER LOGO ### */
+.header-logo img {
+    max-height: 100px;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    }
+    .donate-button-mobile {
+        left: 1rem;
+    }
+    .footer-socials {
+        gap: 3.5rem;
+    }
+    .footer-socials a,
+    .footer-container i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 477px) {
+    .header-nav {
+    gap: 0;
+    }
+}
+
+/* --- MOBILE VIEW 460px AND BELOW --- */
+@media (max-width: 460px) {
+    .footer-socials {
+        gap: 3rem
+    }
+    .footer-socials a,
+    .footer-container i {
+        font-size: 3rem;
+    }
+}
+
+/* ### MOBILE VIEW 420px WIDE AND BELOW ### */
+@media (max-width: 420px) {
+     .donate-button-mobile a {
+        border-radius: 2rem;
+        border: solid 1px var(--color-black);
+        padding: 0.5rem 1rem;
+        font-size: 0.75em;
+        margin-right: 0;
+    }
+    .hamburger-button {
+    gap: 4px;
+    margin-left: -1rem;
+    }
+
+/* --- HAMBURGER BARS --- */
+.hamburger-button > span {
+    width: 48px;
+    height: 7px;
+    border-radius: 12px;
+    border: solid 1px var(--color-black);
+    }
+
+/* --- HAMBURGER TEXT --- */
+.hamburger-text {
+    font-size: 15px;
+    font-weight:1000;
+    -webkit-text-stroke: 1px var(--color-black);
+    margin-top: -4px;
+    margin-left: -8px;
+    }
+    /* --- CLICKABLE HEADER LOGO --- */
+.header-logo img {
+    max-height: 75px;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
+    }
+    .donate-button-mobile {
+        left: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* --- REDUCES SIZE OF HEADLINE --- */
+    }
+    .h1-container {
+        padding: 1.5rem 2rem;
+    }
+    .main-content-links-container {
+    width: 290px;
+    height: 220px;
+    overflow: hidden;
+    }
+    .main-content-links-container a {
+        font-size: 1.2em;
+        padding: 1rem 1.2rem 2.2rem;
+    }
+    .main-content-grid img {
+    border-radius: 35px;
+    border: solid 7px var(--color-secondary);
+    }
+    .main-links-visit a {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        border: 2px solid var(--color-black);
+    }
+     /* --- FOOTER --- */
+    .footer-socials {
+        gap: 2rem;
+    }
+    .footer-socials a,
+    .footer-socials i {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    /* --- FOOTER --- */
+    .footer-socials {
+        gap: 1.8rem;
+    }
+    .footer-socials a,
+    .footer-socials i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 2.5rem; /* --- REDUCES SIZE OF HEADLINE --- */
+    }
+    .main-content-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .explore-content-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .payment-container,
+    .form-row {
+        flex-direction: row;
+    }
+}
+
+/* ### TABLET VIEW WIDTH 1246px AND ABOVE ### */
+@media (min-width: 1246px) {
+    .main-content-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 4rem;
+        margin-top: -2rem;
+    }
+    .explore-content-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .payment-container,
+    .form-row {
+        flex-direction: row;
+    }
+}
+
+/* ### LAPTOP VIEW WIDTH 1400px AND ABOVE ### */
+@media (min-width: 1400px) {
+    .main-content-grid {
+        gap: 4rem 1rem; /* --- INCREASED GAPS BETWEEN CARDS ON LARGER SCREENS --- */
+        margin-top: -3rem;
+    }
+}
+
+
+/* ### HAMBURGER FOR MOBILE - MAX WIDTH 430px AND BELOW ### */
+@media (max-width: 430px) {
+    .hamburger-menu-links{
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+    .hamburger-menu a {
+        margin: 2rem;
+        margin-top: 0.5rem;
+        margin-left: -1.5rem;
+        margin-right: 0rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 25px;
+        border: solid 1px;
+        font-size: 0.9em;
+    }
+}
+
+/* ### HAMBURGER FOR MOBILE - MAX HEIGHT 667px AND BELOW ### */
+@media (max-height: 667px) {
+    .hamburger-menu-links{
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+    .hamburger-menu a {
+        margin: 2rem;
+        margin-top: 0.5rem;
+        margin-left: -1.5rem;
+        margin-right: 0rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 25px;
+        border: solid 1px;
+        font-size: 0.9em;
+    }
+    
+}
+
+/* ### HAMBURGER FOR MOBILE - MAX HEIGHT 568px AND BELOW ### */
+@media (max-height: 568px) {
+    .hamburger-menu a {
+        margin: 2rem;
+        margin-top: 0.5rem;
+        margin-left: -1.5rem;
+        margin-right: 0rem;
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        border: solid 1px;
+        font-size: 0.7em;
+    }
+    
+}

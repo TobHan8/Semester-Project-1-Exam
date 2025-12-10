@@ -4,10 +4,11 @@
     display: flex;
     flex: 1;
     justify-content: flex-start;
+    z-index: 20;
 }
 
 .hamburger-button {
-    z-index: 2;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,9 +29,10 @@
     background-color: var(--color-secondary);
     border: 2.5px solid var(--color-black);
     border-radius: 25px;
+    z-index: 20;
 }
 
-/* --- HAMBURGER TEXT --- */
+/* --- HAMBURGER BUTTON TEXT ("MENU")--- */
 .hamburger-text {
     font-size: 27px;
     font-weight:1000;
@@ -40,6 +42,7 @@
     margin-top: -8px;
     width: 85px;
     text-align: center;
+    z-index: 20;
 }
 
 /* --- HIDES CHECKBOX FOR HAMBURGER --- */
@@ -48,7 +51,7 @@
 }
 
 .hamburger-menu {
-    z-index: 4;
+    z-index: 20;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -82,13 +85,16 @@
     background-color: var(--color-secondary);
     border-radius: 35px;
     border: solid 2px;
+    z-index: 20;
     
 }
 
 #hamburger-toggle:checked ~ .hamburger-menu {
     display: block;
     max-height: 750px; /* --- OVERLY LARGE VALUE FOR ANIMATION TO WORK --- */
+    z-index: 20;
 }
+
 
 /* ### CLICKABLE HEADER LOGO ### */
 .header-logo img {
@@ -115,12 +121,38 @@
     justify-content: flex-end;
     flex-shrink: 0; /* --- PREVENTS BUTTON FROM CHANGING SHAPE --- */
     white-space: nowrap; /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ --- */
-    right: 2rem;
     gap: 3rem;
     transition: opacity 0.3s ease
 }
 
 .header-buttons a {
+    background: var(--color-secondary);
+    color: var(--color-black);
+    border-radius: 2rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.header-buttons a:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* ### HEADER DONATE BUTTON FOR MOBILE VIEW ### */
+.donate-button-mobile {
+    display: none; /* --- HIDE DISPLAY UNTIL @media breakpoint at 1060px --- */
+    position: relative;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.donate-button-mobile a {
     background: var(--color-secondary);
     color: var(--color-black);
     border-radius: 2rem;
@@ -343,6 +375,26 @@
 
 /* --- HOVER ANIMATION --- */
 .payment-page-button a:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* ### CONFIRMATION PAGE EXPLORE BUTTON ### */
+.explore-button a {
+    color: var(--color-black);
+    background: var(--color-secondary);
+    border-radius: 3rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: opacity 0.3s ease /* --- HOVER ANIMATION --- */
+}
+
+/* --- HOVER ANIMATION --- */
+.explore-button a:hover {
     cursor: pointer;
     opacity: 0.75;
 }
