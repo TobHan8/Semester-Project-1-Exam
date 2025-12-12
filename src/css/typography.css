@@ -29,7 +29,7 @@ h1 span {
     display: block;
 }
 
-/* ### UNDER CONSTRUCTION PAGE ### */
+/* ### UNDER CONSTRUCTION PAGE TEXT ### */
 .construction-content-container span {
     font-family: var(--font-main);
     color: var(--color-white);
@@ -105,7 +105,6 @@ h1 span {
     letter-spacing: 0.001em;
     word-spacing: -0.01rem;
     line-height: 1.5em;
-    margin-top: -8.5rem;
 }
 
 /* ### ABOUT US PAGE TEXT 1 ### */
@@ -132,7 +131,7 @@ h1 span {
 .donate-text-container span {
     font-family: var(--font-main);
     color: var(--color-white);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 550;
     letter-spacing: 0.001em;
     word-spacing: -0.01rem;

@@ -30,6 +30,10 @@ MIN-WIDTH = BOTTOM --> TOP
     .header-buttons {
         display: none; /* --- HIDE DISPLAY AFTER @media breakpoint at 1060px --- */
     }
+    /* ### DONATE PAGE TEXT ### */
+    .donate-text-container span {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 880px) {
@@ -41,7 +45,42 @@ MIN-WIDTH = BOTTOM --> TOP
     .footer-socials i {
         font-size: 3rem;
     }
+    /* ### HIDE BACK BUTTON FOR MOBILE AND TABLET ### */
+    .back-button {
+        display: none;
+    }
+    /* ### CHANGE TO FLEX AND CENTER h1 ### */
+    .page-top-container {
+        display: flex;
+        justify-content: center;
+    }
+    .about-content-container {
+        grid-template-columns: 1fr;
+    }
+    .about-text-container-1 {
+        grid-row: 2;
+    }
+    /* ### ABOUT US PAGE TEXT 1 ### */
+    .about-text-container-1 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
 
+    /* ### ABOUT US PAGE TEXT 2 ### */
+    .about-text-container-2 {
+        font-size: 1rem;
+        font-weight: 550;
+    }
+
+}
+
+@media (max-width: 836px) {
+    /* ### DONATE PAGE TEXT ### */
+    .donate-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
 
 /* ### MOBILE VIEW 760px AND BELOW ### */
@@ -74,6 +113,59 @@ MIN-WIDTH = BOTTOM --> TOP
         font-size: 2rem;
         border: 2px solid var(--color-black);
     }
+    .construction-content-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 355px;
+        margin-bottom: 2rem;
+    }
+    .construction-img-container {
+        max-width: 275px;
+        height: 100%;
+        max-height: 175px;
+    }
+    .construction-text-container {
+        margin-bottom: 1rem;
+    }
+    .construction-text-container span {
+        font-size: 1.25rem;
+        margin: 0.5rem;
+    }
+    
+    .explore-button a {
+    border-radius: 3rem;
+    border: solid 2px var(--color-black);
+    padding: 1rem 2rem;
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    }
+    .visit-content-container {
+        max-width: 550px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+        padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    /* --- REORDERING OF GRID FOR VISIT US PAGE --- */
+    .visit-content-container .visit-infotext-location {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .visit-content-container .visit-infobox-price {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .visit-content-container .gps-button-wrapper {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+    }
+    .visit-content-container .visit-infotext-hours {
+        grid-column: 1;
+        grid-row: 4;
+    }
     .footer-left-container {
         display: none;
         margin-left: 0;
@@ -90,8 +182,19 @@ MIN-WIDTH = BOTTOM --> TOP
     .footer-container i {
         font-size: 3.5rem;
     }
+    .page-top-container {
+        width: fit-content;
+    }
 }
 
+/* @@@ MOBILE VIEW 670px AND BELOW @@@ */
+@media (max-width: 670px) {
+    .visit-content-container {
+        max-width: 500px;
+    }
+}
+
+/* @@@ MOBILE VIEW 590px AND BELOW @@@ */
 @media (max-width: 590px) {
     .donate-button-mobile a {
         border-radius: 2rem;
@@ -103,7 +206,6 @@ MIN-WIDTH = BOTTOM --> TOP
     .hamburger-button {
     gap: 6px;
     }
-
 /* --- HAMBURGER BARS --- */
 .hamburger-button > span {
     width: 63.75px;
@@ -119,7 +221,7 @@ MIN-WIDTH = BOTTOM --> TOP
     margin-top: -6px;
     width: 63.75px;
     }
-    /* ### CLICKABLE HEADER LOGO ### */
+/* ### CLICKABLE HEADER LOGO ### */
 .header-logo img {
     max-height: 100px;
     margin-top: -2rem;
@@ -128,8 +230,89 @@ MIN-WIDTH = BOTTOM --> TOP
     .donate-button-mobile {
         left: 1rem;
     }
+    /* ### EXPLORE BUTTON ### */
+    .explore-button a {
+    padding: 0.75rem 1.25rem;
+    font-size: 1em;
+    }
+    .visit-content-container {
+        max-width: 400px;
+    }
+    /* ### VISIT US PAGE ### */
+    .visit-infobox-location,
+    .visit-infobox-price {
+        max-width: 250px;
+        border: solid 6px var(--color-secondary);
+    }
+    /* --- LOCATION ICON --- */
+    .visit-infobox-location i {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    /* --- DOLLAR ICON --- */
+    .visit-infobox-price i {
+        font-size: 2rem;
+        font-weight: 1000;
+    }
+    /* --- INFOBOX HEADLINES --- */
+    .visit-infobox-location h2,
+    .visit-infobox-price h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    /* --- SUB-TEXT INSIDE INFOBOXES -- */
+    .visit-infotext-location,
+    .visit-infotext-price {
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+    }
+    /* --- HEADLINE FOR OPENING HOURS --- */
+    .visit-infotext-hours h4 {
+        font-size: 1.3rem;
+    }
+    /* --- OPENING HOURS TEXT --- */
+    .visit-infotext-hours {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    /* ### GPS MAP BUTTON ### */
+    .gps-button {
+        border: solid 1px var(--color-black);
+        padding: 0.8rem 1.8rem;
+        font-size: 1.3em;
+    }
+    .donate-content-container {
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    /* --- DONATE IMAGE --- */
+    .donate-image-conatiner {
+        max-width: 450px;
+        max-height: 225px;
+        margin: 1rem;
+    }
+    .donate-image-conatiner img {
+        border: solid 6px var(--color-secondary);
+    }
+    /* ### DONATE PAGE TEXT ### */
+    .donate-text-container span {
+        font-size: 1rem;
+    }
+    .donate-page-button a {
+        padding: 0.75rem 1.75rem;
+        font-size: 1.25em;
+    }
+    .confirmation-img-container {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    /* ### CONFIRMATION PAGE ### */
+    .confirmation-text-container span {
+        font-size: 1.25rem;
+    }
     .footer-socials {
-        gap: 3.5rem;
+    gap: 3.5rem;
     }
     .footer-socials a,
     .footer-container i {
@@ -138,6 +321,7 @@ MIN-WIDTH = BOTTOM --> TOP
 }
 
 @media (max-width: 477px) {
+    /* --- REDUCED GAP SO THAT BUTTONS DONT PUSH EACHOTHER --- */
     .header-nav {
     gap: 0;
     }
@@ -152,10 +336,42 @@ MIN-WIDTH = BOTTOM --> TOP
     .footer-container i {
         font-size: 3rem;
     }
+    .page-top-container h1 {
+        font-size: 1.8rem;
+    }
+    .page-top-container {
+        padding: 2rem;
+    }
+    .construction-content-container {
+        max-width: 332px;
+    }
+    .construction-text-container span {
+        font-size: 1rem;
+        margin: 0.25rem;
+    }
+    .visit-content-container {
+        max-width: 400px;
+    }
+    /* ### ABOUT US PAGE TEXT 1 ### */
+    .about-text-container-1 {
+        font-size: 1rem;
+    }
+
+    /* ### ABOUT US PAGE TEXT 2 ### */
+    .about-text-container-2 {
+        font-size: 0.8rem;
+    }
+    .about-img-container-1 img,
+    .about-img-container-2 img {
+    border: solid 6px var(--color-secondary);
+    }
 }
 
 /* ### MOBILE VIEW 420px WIDE AND BELOW ### */
 @media (max-width: 420px) {
+    main {
+        padding: 1rem 2rem;
+    }
      .donate-button-mobile a {
         border-radius: 2rem;
         border: solid 1px var(--color-black);
@@ -167,17 +383,15 @@ MIN-WIDTH = BOTTOM --> TOP
     gap: 4px;
     margin-left: -1rem;
     }
-
-/* --- HAMBURGER BARS --- */
-.hamburger-button > span {
-    width: 48px;
-    height: 7px;
-    border-radius: 12px;
-    border: solid 1px var(--color-black);
+    /* --- HAMBURGER BARS --- */
+    .hamburger-button > span {
+        width: 48px;
+        height: 7px;
+        border-radius: 12px;
+        border: solid 1px var(--color-black);
     }
-
-/* --- HAMBURGER TEXT --- */
-.hamburger-text {
+    /* --- HAMBURGER TEXT --- */
+    .hamburger-text {
     font-size: 15px;
     font-weight:1000;
     -webkit-text-stroke: 1px var(--color-black);
@@ -185,7 +399,7 @@ MIN-WIDTH = BOTTOM --> TOP
     margin-left: -8px;
     }
     /* --- CLICKABLE HEADER LOGO --- */
-.header-logo img {
+    .header-logo img {
     max-height: 75px;
     margin-top: -1.5rem;
     margin-bottom: -1.5rem;
@@ -196,9 +410,6 @@ MIN-WIDTH = BOTTOM --> TOP
 
     h1 {
         font-size: 1.5rem; /* --- REDUCES SIZE OF HEADLINE --- */
-    }
-    .h1-container {
-        padding: 1.5rem 2rem;
     }
     .main-content-links-container {
     width: 290px;
@@ -217,6 +428,93 @@ MIN-WIDTH = BOTTOM --> TOP
         padding: 1rem 1.5rem;
         font-size: 1.5rem;
         border: 2px solid var(--color-black);
+    }
+    .page-top-container h1 {
+        font-size: 1.5rem;
+    }
+    .construction-content-container {
+        max-width: 290px;
+    }
+    .confirmation-content-container .explore-button {
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+    /* ### EXPLORE BUTTON ### */
+    .explore-button a {
+    padding: 0.75rem 1.25rem;
+    font-size: 1em;
+    border: solid 1px var(--color-black);
+    }
+    .visit-content-container {
+        max-width: 300px;
+    }
+    /* ### VISIT US PAGE ### */
+    .visit-infobox-location,
+    .visit-infobox-price {
+        max-width: 200px;
+        border: solid 4px var(--color-secondary);
+    }
+    /* --- LOCATION ICON --- */
+    .visit-infobox-location i {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    /* --- DOLLAR ICON --- */
+    .visit-infobox-price i {
+        font-size: 1.5rem;
+        font-weight: 1000;
+    }
+    /* --- INFOBOX HEADLINES --- */
+    .visit-infobox-location h2,
+    .visit-infobox-price h3{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    /* --- SUB-TEXT INSIDE INFOBOXES -- */
+    .visit-infotext-location,
+    .visit-infotext-price {
+        font-size: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    /* --- HEADLINE FOR OPENING HOURS --- */
+    .visit-infotext-hours h4 {
+        font-size: 1rem;
+    }
+    /* --- OPENING HOURS TEXT --- */
+    .visit-infotext-hours {
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    /* ### GPS MAP BUTTON ### */
+    .gps-button {
+        border: solid 1px var(--color-black);
+        padding: 0.5rem 1rem;
+        font-size: 0.75em;
+    }
+    .donate-content-container {
+        gap: 0rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .donate-image-conatiner img {
+        border: solid 4px var(--color-secondary);
+    }
+    /* ### DONATE PAGE TEXT ### */
+    .donate-text-container span {
+        font-size: 0.75rem;
+    }
+    .donate-page-button a {
+        padding: 0.5rem 1rem;
+        font-size: 0.75em;
+    }
+    .confirmation-img-container {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    /* ### CONFIRMATION PAGE ### */
+    .confirmation-text-container span {
+        font-size: 1rem;
     }
      /* --- FOOTER --- */
     .footer-socials {
@@ -237,6 +535,59 @@ MIN-WIDTH = BOTTOM --> TOP
     .footer-socials i {
         font-size: 2.5rem;
     }
+    .page-top-container {
+        padding: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .page-top-container h1 {
+        font-size: 1.4em;
+    }
+    .explore-content-links-container {
+        width: 290px;
+        height: 200px;
+        overflow: hidden;
+        margin: -1rem;
+    }
+    .construction-content-container {
+        max-width: 260px;
+        margin-top: -2rem;
+    }
+    /* ### VISIT US PAGE ### */
+    .visit-content-container {
+        width: 260px;
+        margin-top: -2rem;
+    }
+    .visit-infobox-location,
+    .visit-infobox-price {
+        max-width: 200px; 
+    }
+    .donate-content-container {
+        margin-top: -1rem;
+    }
+    /* ### ABOUT US CONTENT CONTAINER ### */
+    .about-content-container {
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    /* ### ABOUT US PAGE TEXT 1 ### */
+    .about-text-container-1 {
+        font-size: 0.8rem;
+    }
+    /* ### ABOUT US PAGE TEXT 2 ### */
+    .about-text-container-2 {
+        font-size: 0.6rem;
+    }
+    .about-img-container-1 img,
+    .about-img-container-2 img {
+    border: solid 4px var(--color-secondary);
+    }
+    /*### CONFIRMATION PAGE CONTENT CONTAINER ### */
+    .confirmation-content-container {
+        margin-top: -1rem;
+    }
 }
 
 @media (min-width: 769px) {
@@ -250,9 +601,71 @@ MIN-WIDTH = BOTTOM --> TOP
     .explore-content-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    .payment-container,
-    .form-row {
-        flex-direction: row;
+    .construction-img-container {
+        max-width: 325px;
+        height: 100%;
+        max-height: 225px;
+    }
+    .construction-text-container span {
+        font-size: 1.2rem;
+    }
+    .visit-content-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem 0.5rem;
+    }
+    /* --- REORDERING OF GRID FOR VISIT US PAGE --- */
+    .visit-content-container .visit-infotext-location {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .visit-content-container .visit-infobox-price {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .visit-content-container .gps-button-wrapper {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+    .visit-content-container .visit-infotext-hours {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .construction-img-container {
+        max-width: 400px;
+        height: 100%;
+        max-height: 300px;
+    }
+    .construction-content-container span {
+        font-size: 2rem;
+    }
+    .visit-content-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem 0.5rem;
+    }
+    /* --- REORDERING OF GRID FOR VISIT US PAGE --- */
+    .visit-content-container .visit-infotext-location {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .visit-content-container .visit-infobox-price {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .visit-content-container .gps-button-wrapper {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+    .visit-content-container .visit-infotext-hours {
+        grid-column: 2;
+        grid-row: 2;
     }
 }
 
@@ -261,14 +674,32 @@ MIN-WIDTH = BOTTOM --> TOP
     .main-content-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem 4rem;
-        margin-top: -2rem;
     }
     .explore-content-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .payment-container,
-    .form-row {
-        flex-direction: row;
+    .visit-content-container {
+        grid-template-columns: 1fr auto 1fr;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 2rem;
+    }
+    /* --- REORDERING OF GRID FOR VISIT US PAGE --- */
+    .visit-content-container .visit-infotext-location {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .visit-content-container .visit-infobox-price {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .visit-content-container .gps-button-wrapper {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .visit-content-container .visit-infotext-hours {
+        grid-column: 1 / -1;
+        grid-row: auto;
     }
 }
 
@@ -276,12 +707,19 @@ MIN-WIDTH = BOTTOM --> TOP
 @media (min-width: 1400px) {
     .main-content-grid {
         gap: 4rem 1rem; /* --- INCREASED GAPS BETWEEN CARDS ON LARGER SCREENS --- */
-        margin-top: -3rem;
+        margin-top: 2rem;
     }
 }
 
+/* ### Desktop VIEW WIDTH 1800px AND ABOVE ### */
+@media (min-width: 1800px) {
+    .main-content-grid {
+        gap: 5rem 1rem; /* --- INCREASED GAPS BETWEEN CARDS ON LARGER SCREENS --- */
+        margin-top: 0;
+    }
+}
 
-/* ### HAMBURGER FOR MOBILE - MAX WIDTH 430px AND BELOW ### */
+/* ### HAMBURGER DROPDOWN FOR MOBILE - MAX WIDTH 430px AND BELOW ### */
 @media (max-width: 430px) {
     .hamburger-menu-links{
         margin: 1rem;
@@ -299,7 +737,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### HAMBURGER FOR MOBILE - MAX HEIGHT 667px AND BELOW ### */
+/* ### HAMBURGER DROPDOWN FOR MOBILE - MAX HEIGHT 667px AND BELOW ### */
 @media (max-height: 667px) {
     .hamburger-menu-links{
         margin: 1rem;
@@ -315,10 +753,9 @@ MIN-WIDTH = BOTTOM --> TOP
         border: solid 1px;
         font-size: 0.9em;
     }
-    
 }
 
-/* ### HAMBURGER FOR MOBILE - MAX HEIGHT 568px AND BELOW ### */
+/* ### HAMBURGER DROPDOWN FOR MOBILE - MAX HEIGHT 568px AND BELOW ### */
 @media (max-height: 568px) {
     .hamburger-menu a {
         margin: 2rem;

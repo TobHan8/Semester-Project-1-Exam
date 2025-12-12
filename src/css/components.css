@@ -32,7 +32,7 @@
     z-index: 20;
 }
 
-/* --- HAMBURGER BUTTON TEXT ("MENU")--- */
+/* --- HAMBURGER BUTTON TEXT ("MENU") --- */
 .hamburger-text {
     font-size: 27px;
     font-weight:1000;
@@ -309,7 +309,7 @@
 .gps-button {
     background: var(--color-secondary);
     color: var(--color-black);
-    border-radius: 2rem;
+    border-radius: 3rem;
     border: solid 2px var(--color-black);
     padding: 1rem 2rem;
     font-family: var(--font-main);
