@@ -7,7 +7,7 @@
     --color-white: #FFFFFF;
 
     /* --- FONTS --- */
-    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-hamburger: sans-serif;
     /* --- ADD --btn-padding etc. variables LATER ON --- */
 }

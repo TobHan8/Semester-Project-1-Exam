@@ -208,24 +208,18 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 /* --- HAMBURGER BARS --- */
 .hamburger-button > span {
-    width: 63.75px;
-    height: 10.5px;
+    width: 63px;
+    height: 12px;
     border-radius: 18px;
     }
-
 /* --- HAMBURGER TEXT --- */
 .hamburger-text {
-    font-size: 20.25px;
-    font-weight:1000;
-    -webkit-text-stroke: 1.35px var(--color-black);
-    margin-top: -6px;
-    width: 63.75px;
+    display: none; /* --- HIDE TEXT ON SMALLER SCREENS TO RESOLVE CONTRAST/ACCESSIBILITY ISSUES --- */
     }
 /* ### CLICKABLE HEADER LOGO ### */
 .header-logo img {
     max-height: 100px;
-    margin-top: -2rem;
-    margin-bottom: -2rem;
+    padding: 6px;
     }
     .donate-button-mobile {
         left: 1rem;
@@ -380,29 +374,20 @@ MIN-WIDTH = BOTTOM --> TOP
         margin-right: 0;
     }
     .hamburger-button {
-    gap: 4px;
-    margin-left: -1rem;
+        gap: 4px;
+        margin-left: -1rem;
     }
     /* --- HAMBURGER BARS --- */
     .hamburger-button > span {
-        width: 48px;
-        height: 7px;
-        border-radius: 12px;
+        width: 44px;
+        height: 8px;
+        border-radius: 10px;
         border: solid 1px var(--color-black);
-    }
-    /* --- HAMBURGER TEXT --- */
-    .hamburger-text {
-    font-size: 15px;
-    font-weight:1000;
-    -webkit-text-stroke: 1px var(--color-black);
-    margin-top: -4px;
-    margin-left: -8px;
     }
     /* --- CLICKABLE HEADER LOGO --- */
     .header-logo img {
     max-height: 75px;
-    margin-top: -1.5rem;
-    margin-bottom: -1.5rem;
+    padding: 4px;
     }
     .donate-button-mobile {
         left: 1rem;
