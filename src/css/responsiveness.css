@@ -212,10 +212,6 @@ MIN-WIDTH = BOTTOM --> TOP
     height: 12px;
     border-radius: 18px;
     }
-/* --- HAMBURGER TEXT --- */
-.hamburger-text {
-    display: none; /* --- HIDE TEXT ON SMALLER SCREENS TO RESOLVE CONTRAST/ACCESSIBILITY ISSUES --- */
-    }
 /* ### CLICKABLE HEADER LOGO ### */
 .header-logo img {
     max-height: 100px;

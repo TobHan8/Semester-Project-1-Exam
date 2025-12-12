@@ -10,9 +10,14 @@
     <meta property="og:image" content="https://www.this-is-an-exaple.com/assets/images/og-logo.jpg">
     <meta property="og:description" content="Science made fun!">
     <title>About us | The Community Science Museum</title>
-    <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="icon" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link rel="icon" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/variables.css">
+    <link rel="stylesheet" href="../src/css/typography.css">
+    <link rel="stylesheet" href="../src/css/layouts.css">
+    <link rel="stylesheet" href="../src/css/components.css">
+    <link rel="stylesheet" href="../src/css/responsiveness.css">
     <script src="https://kit.fontawesome.com/71249f71bc.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
@@ -30,9 +35,6 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        <div class="hamburger-text">
-                            <span>MENU</span>
-                        </div>
                     </div>
                 </label>
                 <nav class="hamburger-menu">
@@ -74,7 +76,7 @@
 
         <div class="about-content-container">
             <div class="about-img-container-1">
-                <img src="../assets/images/museum-about.jpg" alt="The main building of the museum">
+                <img src="../assets/images/museum-about.jpg" alt="The main building of the museum" fetchpriority="high">
             </div>
             <div class="about-img-container-2">
                 <img src="../assets/images/library.jpg" alt="The library of the museum">
