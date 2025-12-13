@@ -215,7 +215,6 @@ MIN-WIDTH = BOTTOM --> TOP
 /* ### CLICKABLE HEADER LOGO ### */
 .header-logo img {
     max-height: 100px;
-    padding: 6px;
     }
     .donate-button-mobile {
         left: 1rem;
@@ -310,6 +309,76 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* ### PAYMENT PAGE FORM ### */
+@media (max-width: 641px) {
+    /* --- AGREE TO TERMS AND PAY BUTTON CONTAINER --- */
+    .confirm-pay-container {
+        flex-direction: column; /* --- STACK ON TOP WHEN ON SMALLER WIDTH --- */
+        gap: 4rem;
+    }
+    /* --- ANONYMOUS TEXT --- */
+    label.anonymous-text {
+    font-size: 1.2rem;
+}
+}
+
+/* @@@ MOBILE VIEW FOR PAYMENT FORM PAGE 536px AND BELOW @@@ */
+@media (max-width: 536px) {
+    /* --- PAYMENT CARDS IMAGE --- */
+    .form-column img {
+        max-width: 100%;
+}
+    /* ### PAYMENT PAGE CHECKBOXES ### */
+    .checkbox-container input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        accent-color: var(--color-secondary);
+        flex-shrink: 1;
+}
+
+    /* --- AGREE TO TERMS AND PAY BUTTON CONTAINER --- */
+    .confirm-pay-container {
+        flex-direction: column; /* --- STACK ON TOP WHEN ON SMALLER WIDTH --- */
+        gap: 4rem;
+    }
+    
+    /* --- HEADLINES FOR FORM SECTIONS --- */
+    .payment-content-container h2 {
+        font-size: 1.8rem; /* --- REDUCED FONT SIZE --- */
+    }
+}
+
+@media (max-width: 490px) {
+    .payment-form-container {
+    width: 1000px;
+    padding: 40px;
+    background-color: var(--color-primary);
+    border: 0.6rem solid var(--color-secondary);
+    border-radius: 10px;
+    }
+    .form-input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 4px solid var(--color-secondary);
+    border-radius: 6px;
+    font-size: 12px;
+    }
+    /* --- HEADLINES FOR FORM SECTIONS --- */
+    .payment-content-container h2 {
+        font-size: 1.25rem; /* --- REDUCED FONT SIZE --- */
+    }
+    .payment-content-container label {
+    font-size: 0.8rem;
+    }
+    .payment-page-button a {
+        border: solid 2px var(--color-black);
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25em;
+    }
+}
+
 @media (max-width: 477px) {
     /* --- REDUCED GAP SO THAT BUTTONS DONT PUSH EACHOTHER --- */
     .header-nav {
@@ -383,7 +452,6 @@ MIN-WIDTH = BOTTOM --> TOP
     /* --- CLICKABLE HEADER LOGO --- */
     .header-logo img {
     max-height: 75px;
-    padding: 4px;
     }
     .donate-button-mobile {
         left: 1rem;
@@ -488,6 +556,38 @@ MIN-WIDTH = BOTTOM --> TOP
     .donate-page-button a {
         padding: 0.5rem 1rem;
         font-size: 0.75em;
+    }
+    /* ### PAYMENT PAGE ### */
+    .payment-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1500px;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 1.5rem;
+        background-color: var(--color-primary);
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    .payment-form-container {
+        padding: 20px;
+        border: 0.5rem solid var(--color-secondary);
+    }
+    .form-row {
+    display: flex;
+    gap: 3rem;
+    }
+    .form-input-box {
+    margin: 1.2rem 0;
+    }
+    .confirm-pay-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 1rem;
     }
     .confirmation-img-container {
         max-width: 200px;

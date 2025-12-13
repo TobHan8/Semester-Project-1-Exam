@@ -32,7 +32,7 @@ header {
     top: 0;
     z-index: 3;
     background-color: var(--color-primary);
-    padding: 1rem 1.5rem;
+    padding: 2rem;
 }
 
 main {
@@ -314,7 +314,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1150px;
+    max-width: 1500px;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -339,7 +339,8 @@ main {
 
 .form-row,
 .form-column {
-    flex: 1 1 250px;
+    flex: 1 200px;
+    flex-wrap: wrap;
 }
 
 .form-input-box {
@@ -349,6 +350,7 @@ main {
 .form-column img {
     margin: 2rem 0;
     filter: drop-shadow(0 0 2px var(--color-black));
+    max-width: 100%;
 }
 
 .form-input-box label {
