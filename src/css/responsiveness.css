@@ -1,7 +1,7 @@
 
 .main-content-grid,
 .explore-content-container {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* --- SETS PIXEL VALUE FOR CARDS AND EQUAL SIZE IN REMAINING SPACE --- */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* --- SETS PIXEL VALUE FOR CARDS AND EQUAL SIZE IN REMAINING SPACE (COULD HAVE USED THIS FOR BETTER SCALING ON SMALLER VIEWPORTS AS WELL) --- */
     gap: 4rem;
     place-items: center; /* --- CENTERING BOTH DIRECTIONS (was off center on mobile view) --- */
 }
@@ -22,7 +22,7 @@ MAX-WIDTH = TOP --> BOTTOM
 MIN-WIDTH = BOTTOM --> TOP
 ########################## */
 
-/* ### MOBILE VIEW 1080px AND BELOW ### */
+/* @@@ 1080px AND BELOW @@@  */
 @media (max-width: 1080px) {
     .donate-button-mobile {
     display: flex;
@@ -36,6 +36,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* @@@ MOBILE VIEW 880px AND BELOW @@@ */
 @media (max-width: 880px) {
     .footer-socials {
         right: 0;
@@ -73,7 +74,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 
 }
-
+/* @@@  MOBILE VIEW 836px AND BELOW @@@ */
 @media (max-width: 836px) {
     /* ### DONATE PAGE TEXT ### */
     .donate-content-container {
@@ -83,7 +84,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### MOBILE VIEW 760px AND BELOW ### */
+/* @@@  MOBILE VIEW 760px AND BELOW @@@  */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; /* --- REDUCES SIZE OF HEADLINE --- */
@@ -350,6 +351,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* @@@ MOBILE VIEW 490px AND BELOW @@@ */
 @media (max-width: 490px) {
     .payment-form-container {
     width: 1000px;
@@ -379,6 +381,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* @@@ MOBILE VIEW 477px AND BELOW @@@ */
 @media (max-width: 477px) {
     /* --- REDUCED GAP SO THAT BUTTONS DONT PUSH EACHOTHER --- */
     .header-nav {
@@ -386,7 +389,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* --- MOBILE VIEW 460px AND BELOW --- */
+/* @@@ MOBILE VIEW 460px AND BELOW @@@ */
 @media (max-width: 460px) {
     .footer-socials {
         gap: 3rem
@@ -426,7 +429,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### MOBILE VIEW 420px WIDE AND BELOW ### */
+/* @@@ MOBILE VIEW 420px AND BELOW @@@ */
 @media (max-width: 420px) {
     main {
         padding: 1rem 2rem;
@@ -607,6 +610,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* @@@ MOBILE VIEW 350px AND BELOW @@@ */
 @media (max-width: 350px) {
     /* --- FOOTER --- */
     .footer-socials {
@@ -671,6 +675,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* @@@ MOBILE VIEW 769px AND ABOVE @@@ */
 @media (min-width: 769px) {
     h1 {
         font-size: 2.5rem; /* --- REDUCES SIZE OF HEADLINE --- */
@@ -715,6 +720,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
+/* @@@ 800px AND ABOVE @@@ */
 @media (min-width: 800px) {
 
     .construction-img-container {
@@ -750,7 +756,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### TABLET VIEW WIDTH 1246px AND ABOVE ### */
+/* @@@ 1246px AND ABOVE @@@ */
 @media (min-width: 1246px) {
     .main-content-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -784,7 +790,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### LAPTOP VIEW WIDTH 1400px AND ABOVE ### */
+/* @@@ LAPTOP VIEW WIDTH 1400px AND ABOVE @@@ */
 @media (min-width: 1400px) {
     .main-content-grid {
         gap: 4rem 1rem; /* --- INCREASED GAPS BETWEEN CARDS ON LARGER SCREENS --- */
@@ -792,7 +798,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### Desktop VIEW WIDTH 1800px AND ABOVE ### */
+/* @@@ Desktop VIEW WIDTH 1800px AND ABOVE @@@ */
 @media (min-width: 1800px) {
     .main-content-grid {
         gap: 5rem 1rem; /* --- INCREASED GAPS BETWEEN CARDS ON LARGER SCREENS --- */
@@ -800,7 +806,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### HAMBURGER DROPDOWN FOR MOBILE - MAX WIDTH 430px AND BELOW ### */
+/* @@@ HAMBURGER DROPDOWN FOR MOBILE - MAX WIDTH 430px AND BELOW @@@ */
 @media (max-width: 430px) {
     .hamburger-menu-links{
         margin: 1rem;
@@ -818,7 +824,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### HAMBURGER DROPDOWN FOR MOBILE - MAX HEIGHT 667px AND BELOW ### */
+/* @@@ HAMBURGER DROPDOWN FOR MOBILE - MAX HEIGHT 667px AND BELOW @@@ */
 @media (max-height: 667px) {
     .hamburger-menu-links{
         margin: 1rem;
@@ -836,7 +842,7 @@ MIN-WIDTH = BOTTOM --> TOP
     }
 }
 
-/* ### HAMBURGER DROPDOWN FOR MOBILE - MAX HEIGHT 568px AND BELOW ### */
+/* @@@ HAMBURGER DROPDOWN FOR MOBILE - MAX HEIGHT 568px AND BELOW @@@ */
 @media (max-height: 568px) {
     .hamburger-menu a {
         margin: 2rem;

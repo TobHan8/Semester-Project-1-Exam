@@ -74,7 +74,7 @@ main {
     margin-bottom: 2rem;
 }
 
-/* ### PAGE TOP CONTAINER FOR back-button and h1 ### */
+/* ### PAGE TOP CONTAINER FOR back-button AND h1 ### */
 .page-top-container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -180,7 +180,7 @@ main {
     align-items: center;
 }
 
-/* --- FORCING infotext-location TO SPAN FULL WIDTH IN GRID LAYOUT --- */
+/* --- FORCING infotext-hours TO SPAN FULL WIDTH AND CENTER IN GRID LAYOUT --- */
 .visit-content-container .visit-infotext-hours {
     grid-column: 1 / -1;
 }
@@ -189,7 +189,7 @@ main {
     display: block;
 }
 
-/* --- STACKING OF TEXT INSIDE span INFOTEXT HOURS --- */
+/* --- STACKING OF TEXT INSIDE span infotext-hours --- */
 .visit-infotext-hours span {
     display: block;
 }
@@ -324,6 +324,7 @@ main {
     padding: 2rem;
 }
 
+/* ### PAYMENT FORM ### */
 .payment-form-container {
     width: 1000px;
     padding: 40px;
@@ -347,9 +348,10 @@ main {
     margin: 2rem 0;
 }
 
+/* --- PAYMENT CARDS IMAGE --- */
 .form-column img {
     margin: 2rem 0;
-    filter: drop-shadow(0 0 2px var(--color-black));
+    filter: drop-shadow(0 0 2px var(--color-black)); /* --- SHADOW EFFECT ON IMAGE --- */
     max-width: 100%;
 }
 
