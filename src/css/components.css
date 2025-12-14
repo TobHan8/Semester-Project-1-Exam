@@ -1,6 +1,7 @@
 
 /* ### HAMBURGER DROPDOWN MENU ### */
 .hamburger-container {
+    display: flex;
     flex: 1;
     z-index: 20;
 }

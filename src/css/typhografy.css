@@ -1,0 +1,177 @@
+.hamburger-menu a {
+    font-family: var(--font-main);
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: var(--color-black);
+    text-decoration: none; /* --- REMOVES UNDERLINE --- */
+    text-align: center;
+}
+
+/* ### h1 HEADLINE FOR INDEX AND PAGE TOP CONTAINER ### */
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: -0.5rem;
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: 0.5rem;
+    line-height: 1em;
+}
+
+/* ### h1 WITH span FOR INDEX PAGE ONLY ### --- MIGHT CHANGE THIS TO A MORE DECORATIVE TEXT-IMAGE ---*/ 
+h1 span {
+    display: block;
+}
+
+/* ### UNDER CONSTRUCTION PAGE ### */
+.construction-content-container span {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    line-height: 1em;
+}
+
+/* ### VISIT US PAGE ### */
+.visit-infobox-location,
+.visit-infobox-price {
+    border: solid 8px var(--color-secondary);
+    border-radius: 25px;
+    text-align: center;
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+    justify-self: center;
+    font-family: var(--font-main);
+    color: var(--color-secondary);
+}
+
+/* --- LOCATION ICON --- */
+.visit-infobox-location i {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* --- DOLLAR ICON --- */
+.visit-infobox-price i {
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+/* --- INFOBOX HEADLINES --- */
+.visit-infobox-location h2,
+.visit-infobox-price h3{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    line-height: 2.5rem;
+}
+
+/* --- SUB-TEXT INSIDE INFOBOXES -- */
+.visit-infotext-location,
+.visit-infotext-price {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* --- HEADLINE FOR OPENING HOURS --- */
+.visit-infotext-hours h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    line-height: 2em;
+}
+
+/* --- OPENING HOURS TEXT --- */
+.visit-infotext-hours {
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    line-height: 1.5em;
+    margin-top: -8.5rem;
+}
+
+/* ### ABOUT US PAGE TEXT 1 ### */
+.about-text-container-1 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+
+/* ### ABOUT US PAGE TEXT 2 ### */
+.about-text-container-2 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+
+/* ### DONATE PAGE TEXT ### */
+.donate-content-container span {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+    text-align: start;
+}
+
+.payment-content-container h2 {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+
+.payment-content-container span {
+    font-family: var(--font-main);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 0.001em;
+    word-spacing: -0.01rem;
+}
+.footer-text {
+    position: relative;
+    flex-direction: column;
+    flex-shrink: 0; /* --- PREVENTS TEXT FROM CHANGING SHAPE --- */
+    white-space: nowrap; /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ --- */
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    font-family: var(--font-main);
+    color: var(--color-white);
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+}
+
+.footer-text span {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+}
